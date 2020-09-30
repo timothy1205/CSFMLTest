@@ -2,7 +2,7 @@
 #include <SFML/Graphics.h>
 
 int main() {
-    sfRenderWindow *window = sfRenderWindow_create((sfVideoMode){1920, 1080}, "CSFMLTest",  sfFullscreen, NULL);
+    sfRenderWindow *window = sfRenderWindow_create((sfVideoMode){1920, 1080}, "CSFMLTest",  sfDefaultStyle, NULL);
     sfView *view = sfRenderWindow_getDefaultView(window);
 
     sfView_setSize(view, (sfVector2f){1920.0f, 1080.0f});
